@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Douala International Film Festival</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f5f1e6; /* beige clair pour éclaircir la plateforme */
+      color: #2b1b12; /* marron foncé lisible */
+      font-family: 'Roboto', sans-serif;
+    }
+    h1, h2, h3 {
+      font-family: 'Cinzel', serif;
+      color: #c9a227; /* jaune or */
+    }
+    .navbar {
+      background-color: #2b1b12; /* marron foncé */
+    }
+    .navbar-brand{
+      color: #c9a227;
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('logo.jpeg') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: left;
+      color: #ffffff;
+    }
+    .hero-content {
+      max-width: 700px;
+    }
+    .hero h1 {
+      font-size: 3.2rem;
+      font-weight: 700;
+      color: #c9a227;
+    }
+    .hero .highlight {
+      color: #c9a227;
+    }
+    .btn-gold {
+      background-color: #d4af37;
+      color: #000;
+      border: none;
+      padding: 12px 30px;
+      font-weight: bold;
+    }
+    .btn-gold:hover {
+      background-color: #b8962e;
+      color: #000;
+    }
+    section {
+      padding: 80px 0;
+    }
+    .card {
+      background-color: #ffffff;
+      color: #2b1b12;
+      border: 1px solid #c9a227;
+    }
+    #call a{
+      color:#c9a227;
+      text-decoration: none;
+    }
+    #contact{
+      color:#ffffff;
+    }
+    #contact p a{
+        color:#c9a227;
+        text-decoration: none;
+        
+    }
+    .mt-3{
+        color:#ffffff;
+    }
+    .mt-2 a{
+      color:#ffffff;
+    }
+    footer {
+      background-color: #2b1b12;
+      color: #ffffff;
+      padding: 30px 0;
+      text-align: center;
+      font-size: 14px;
+    }
+
+   /* Centrage du bouton règlement */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+/* Bouton règlement */
+.btn-reglement {
+  padding: 12px 26px;
+  background-color: #c9a227;
+  color: #000;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-reglement:hover {
+  background-color: #c9a227;
+  color: #000;
+}
+
+/* Listes bien alignées dans les cards */
+.card ul {
+  padding-left: 1.2rem;   /* réduit le décalage */
+  margin-top: 15px;
+  text-align: left;       /* aligne le texte */
+}
+
+.card ul li {
+  margin-bottom: 8px;     /* espace entre les lignes */
+  line-height: 1.5;
+}
+
+.mb-2{
+  color: #c9a227;
+}
+
+.mt-3{
+  color: #b8962e;
+}
+
+.mt-3 strong{
+  color:#ffff;
+}
+/* Responsive amélioré */
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 120px 20px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 60px 20px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+}
+.col-md-6 mb-4 h3 a{
+  text-decoration: none;
+  color: #b8962e;
+}
+
+
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">DIFF</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon">.</span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="#festival">Festival</a></li>
+        <li class="nav-item"><a class="nav-link" href="#call">Appel à Candidatures</a></li>
+        <li class="nav-item"><a class="nav-link" href="#guidelines">Dossier</a></li>
+        <li class="nav-item"><a class="nav-link" href="#formation">Formation</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<!-- <section class="hero" id="home">
+  <div class="container text-center">
+    <h1 class="display-4">Douala International Film Festival</h1>
+    <p class="lead">THEME : " Les talents mis en lumière pour renforcer la cohésion des peuples."</p>
+    <p>07 février – 14 mars • Douala, Cameroun</p>
+    <a href="#call" class="btn btn-gold mt-4">Appel à Candidatures</a>
+  </div>
+</section>  -->
+
+<!-- HERO -->
+ <section class="hero" id="home">
+  <div class="container text-center">
+    <h1 class="display-4">Douala International Film Festival</h1>
+
+    <p class="lead">
+     THEME : « Les cultures du monde à travers le cinéma »
+    </p>
+
+    <p class="mb-2">
+      <strong>Cinéma • Éducation • Entrepreneuriat • Culture</strong>
+    </p>
+
+    <p>
+      📍 Douala, Cameroun<br>
+      Palais de la Culture Sawa • Institut Français de Douala •
+      Salle des fêtes d’Akwa • Université de Douala • Cinéma EDEN
+    </p>
+
+    <p class="mt-3">
+      🗓 <strong>Formation :</strong> 16 février – 05 mars 2026<br>
+      🎬 <strong>Festival :</strong> 28 février – 07 mars 2026
+    </p>
+
+    <a href="#call" class="btn btn-gold mt-4">
+      Appel à Candidatures
+    </a>
+  </div>
+</section> 
+
+
+<!-- FESTIVAL -->
+<section id="festival">
+  <div class="container">
+    <h2 class="text-center mb-4">Présentation du Festival</h2>
+    <p class="text-center mb-5">
+      Le <strong>Douala International Film Festival (DIFF)</strong> est un événement cinématographique et culturel international qui célèbre la diversité des cultures du monde à travers le cinéma. Ancré à Douala, carrefour économique et culturel de l’Afrique centrale, le festival met en lumière le patrimoine historique et culturel africain tout en favorisant les échanges interculturels et la coopération internationale.
+    </p>
+    
+    <section id="formation">
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card h-100 p-4">
+              <h3>🎯 Objectifs</h3>
+              <ul>
+                <li>Former les stagiaires aux techniques d'écritures de scénario</li>
+                <li>documentaire, les aider à developper leur compétences en matiere</li>
+                <li>de recheche et de narration, les encourager à créer des contenus innovants et de qualité</li>
+                <li>Mettre l'accent sur la conservation et la valorisation des objets</li>
+                <li>et des collections muséeales en lien avec les  thèmes de la mémoire</li>
+                <li>et du patrimoine culturel.</li>
+                <li>Explorer les possibilités de collaboration entre les musées et les</li>
+                <li>documentaristes pour créer des contenus qui valorisent les collections et expositions.</li>
+              </ul>
+            </div>
+          </div>
+    
+          <div class="col-md-4">
+            <div class="card h-100 p-4">
+              <h3>🎬 Activités</h3>
+              <ul>
+                <li>Projections de films en salle et en plein air</li>
+                <li>Compétitions de films d’écoles et jeunes talents</li>
+                <li>Workshops sur les métiers du cinéma et de l’audiovisuel</li>
+            <li>Master-classes animées par des experts internationaux</li>
+            <li>Ateliers de développement de projets (fiction & documentaire)</li>
+            <li>Renforcement des capacités des étudiants et jeunes professionnels</li>
+              </ul>
+            </div>
+          </div>
+         
+      <div class="col-md-4">
+        <div class="card h-100 p-4 text-center">
+          <h3>🎓 Formation</h3>
+          <ul class="text-start">
+          <li>ECRIRE LES SCIENCES HUMAINES ET SOCIALES PAR LE DOCUMENTAIRE</li>
+          <li>Cet atelier s'adresse aux doctorants en histoire, anthropologie,éthnologie et sociologie</li>
+          <li>RESIDENCE DE LA CREATION POUR LA CONSERVATION ET LA VALORISATION</li>
+          <li>DES ARCHIVES,DES MEMOIRES ET DU PATRIMOINE CULTUREL.</li>
+          <li>Elle est dédié aux artisttes et créateurs qui souhaitent explorer les thèmes</li>
+          <!-- <li>de la mémoire, de l'histoire et du patrimoine culturel.Les professionnels 
+          <li>de la conservation et de la valorisation des archives et du patrimoine culturel,
+          <li>les chercheurs et universitaires qui travaillent dans les projets liés à la mémoire,</li>
+          <li>à l'histoire et au patrimoine culturel. Les étudiants en art,en histoire et </li>
+          <li>en anthropologie en muséologie etc. Qui souhaitent acquérir des compétences pratiques</li>
+          <li>dans la conservation et la valorisation des archives et du patrimoine culturel.</li> -->
+          
+          </ul>
+          <div class="mt-4">
+            <p><strong>Souhaitez-vous participer à la formation ?</strong></p>
+            <!-- <a href="#formation"
+            class="btn btn-gold"> -->
+            <a href="#formation-section" class="btn btn-gold">
+               Je souhaite participer à la formation
+           </a>
+            <!-- Je souhaite participer à la formation -->
+             </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+  </div>
+</section>
+
+<!-- CALL FOR FILMS -->
+<!-- <section id="call" style="background-color:#0d0704;">
+  <div class="container text-center">
+    <h2>Appel à Films</h2>
+    <p class="mt-3">Les inscriptions pour la sélection officielle sont ouvertes du 1er au 31 Janvier 2026.</p>
+    <div class="card p-4 mt-4">
+      <h3>Soumission par email uniquement</h3>
+      <p class="mt-2">Envoyez votre film à :</p>
+      <p color="black"><strong ><a href="mailto:cinepeoples7@gmail.com">cinepeoples7@gmail.com</a></strong></p>
+      <p>Date limite : <strong>31 janvier Avant minuit</strong></p>
+    </div>
+  </div>
+
+<br>
+
+  <div class="container text-center">
+    <h2>Appel à Formation</h2>
+    <p class="mt-3">Les inscriptions pour la sélection officielle sont ouvertes du 1er au 31 Janvier 2026.</p>
+    <div class="card p-4 mt-4">
+      <h3>Soumission par email uniquement</h3>
+      <p class="mt-2">Envoyez votre film à :</p>
+      <p color="black"><strong ><a href="mailto:cinepeoples7@gmail.com">cinepeoples7@gmail.com</a></strong></p>
+      <p>Date limite : <strong>31 janvier Avant minuit</strong></p>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="container text-center">
+    <h2>Appel à Projet</h2>
+    <p class="mt-3">Les inscriptions pour la sélection officielle sont ouvertes du 1er au 31 Janvier 2026.</p>
+    <div class="card p-4 mt-4">
+      <h3>Soumission par email uniquement</h3>
+      <p class="mt-2">Envoyez votre film à :</p>
+      <p color="black"><strong ><a href="mailto:cinepeoples7@gmail.com">cinepeoples7@gmail.com</a></strong></p>
+      <p>Date limite : <strong>31 janvier Avant minuit</strong></p>
+    </div>
+  </div> -->
+
+<!-- </section> -->
+
+<!-- CALLS SECTION -->
+<section id="call" style="background-color:#0d0704;">
+  <div class="container">
+    <h2 class="text-center mb-5">Appels à candidatures</h2>
+
+    <div class="row g-4">
+
+      <!-- APPEL À FILM -->
+      <div class="col-md-4">
+        <div class="card h-100 p-4 text-center">
+          <h3>🎬 Appel à Films</h3>
+          
+          <ul>
+            <li><strong>Types de films acceptés :</strong> Fiction, Documentaire, Animation, Experimental</li>
+            <li> <strong>Films acceptés :</strong> Tout genre produits après 2020</li>
+            <li>Les grands classiques africains et afrodescendants, oeuvres éthnologiques historiques et patrimoniales, sans limite d'âge.</li>
+          </ul>
+          <!-- <p class="mt-3 text-dark">
+            Inscriptions ouvertes du <strong>1er au 31 janvier 2026</strong>.
+         </p> -->
+
+          <p> <strong>Soumission par email :</strong></p>
+          <p>
+            <strong>
+              <a href="mailto:cinepeoples7@gmail.com">cinepeoples7@gmail.com</a>
+            </strong>
+          </p>
+          <p>Date de soumission : <strong>Du 15 Janvier au 15 Février 2026 à minuit</strong></p>
+        </div>
+      </div>
+
+      <!-- APPEL À FORMATION -->
+      <div class="col-md-4">
+        <div class="card h-100 p-4 text-center">
+          <h3>🎓 Appel à Formation</h3>
+        
+          <ul>
+            <li>Ecrire les sciences humaines et sociales par le cinéma documentaire</li>
+            <li>Résidence de création pour la conservation et la valorisation des archives, des mémoires et du patrimoine culturel</li>
+            <li>Initiation au film d'animation "du conte à un projet de film"</li>
+            <li>Atelier de conte et d'apprentissage des langues</li>
+          </ul>
+          <!-- <p class="mt-3 text-dark">
+            Inscriptions ouvertes du <strong>1er au 31 janvier 2026</strong>.
+          </p> -->
+          <p><strong>Soumission par email :</strong></p>
+          <p>
+            <strong>
+              <a href="mailto:cinepeoples7@gmail.com">cinepeoples7@gmail.com</a>
+            </strong>
+          </p>
+          <p>Date limite : <strong>20 Février 2026</strong></p>
+        </div>
+      </div>
+
+      <!-- APPEL À PROJET -->
+      <div class="col-md-4">
+        <div class="card h-100 p-4 text-center">
+          <h3>📽️ Appel à Projet</h3>
+          
+          <ul>
+            <li> <strong>Projets acceptés :</strong> Film de fiction, documentaires, animation</li>
+          </ul>
+          <!-- <p class="mt-3 text-dark">
+            Inscriptions ouvertes du <strong>1er au 31 janvier 2026</strong>.
+          </p> -->
+          <p><strong>Soumission par email :</strong></p>
+          <p>
+            <strong>
+              <a href="mailto:cinepeoples7@gmail.com">cinepeoples7@gmail.com</a>
+            </strong>
+          </p>
+          <p>Date limite : <strong>25 Février 2026</strong></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="guidelines">
+  <div class="container">
+    <h2 class="text-center mb-4">Dossier</h2>
+
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <h3>Dossier Film</h3>
+        <ul>
+          <li>Titre du film</li>
+          <li>Synopsis</li>
+          <li>Nom du réalisateur</li>
+          <li>Nom du producteur</li>
+          <li>Année de production</li>
+          <li>Structure de production</li>
+          <li>Diffusions</li>
+          <li>Distributeur</li>
+          <li>Aumoins 3 photos du film (images numériques, 300 DPI, JPG)</li>
+          <li>L'affiche du film (en .pdf et .jpg)</li>
+          <li>Un lien vers le trailer du film disponible en streaming</li>
+          <li>Affiches, flyers et autres matériels de promotion</li>
+        </ul>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <h3 id="formation-section">Dossier Formation</h3>
+         <!-- <section id="formation-section"> -->
+
+        <!-- <h3>Formations</h3> -->
+        <ul>
+          <li>Ecrire les sciences humaines et sociales par le cinéma documentaire</li>
+          <li>Résidence de création pour la conservation et la valorisation des archives, des mémoires et du patrimoine culturel</li>
+          <li>Initiation au film d'animation du conte à un projet de film</li>
+          <li>Atelier de conte et d'apprentissage des langues</li>
+          <li>Date limite : 20 Février 2026</li>
+        </ul>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <h3>Dossier du projet</h3>
+        <ul>
+          <li>Un pitch accrocheur</li>
+          <li>Un scénario ou traitement</li>
+          <li>Une note d'intension</li>
+          <li>Une fiche technique (Réalisateur, producteur, scénariste, principaux acteurs)</li>
+           <li>Biofilmographie, photo et CV de l'auteur, réalisateur et producteurs</li>
+          <li>Un plan de financement équilibré</li>
+          <li>Budget prévisionnel</li>
+          <li>Calendrier de production</li>
+          <li>Détail des aides publiques perçues</li>
+          <li>Statut juridique de la société de production (Facutatif pour les auteurs et réalisateurs)</li>
+         <li>Montant demandé et justification</li>
+          
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bouton centré -->
+    <div class="btn-container">
+      <a href="reglement.pdf" target="_blank" class="btn-reglement"> Lire la description du règlement</a>
+      <!-- <a href="https://mega.nz/file/4ZU3TYob#2JINZUSJu7StYe4T8JYOyPpp-pVCbCcdW_n7w7Cryqk" target="_blank" class="btn-reglement">
+        Lire la description du règlement
+      </a> -->
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" style="background-color:#0d0704;">
+  <div class="container text-center">
+    <h2>Contact</h2>
+    <p>Email officiel :</p>
+    <p><strong><a href="mailto:cinepeoples7@gmail.com">cinepeoples7@gmail.com</a></strong></p>
+    <p>Téléphone : +237 655 39 28 37</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Douala International Film Festival – Tous droits réservés</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
